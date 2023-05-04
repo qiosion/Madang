@@ -11,7 +11,6 @@
 		exit();
 	}
 	$custid = $_GET['id'];
-	//$bookid 를 이용해서 SELECT 쿼리를 작성하세요.
 	$sql = "SELECT * FROM customer WHERE custid='".$custid."'";
 	$result = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_array($result);
